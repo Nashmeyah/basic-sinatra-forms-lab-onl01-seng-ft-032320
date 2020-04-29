@@ -2,7 +2,7 @@ require 'sinatra/base'
 
 class App < Sinatra::Base
   get "/newteam" do
-    erb :newteam
+    erb :team
   end
 
   post '/team' do
@@ -13,7 +13,7 @@ class App < Sinatra::Base
     @small_forward = params["small_forward"]
     @power_forward = params["power_forward"]
     @center = params["center"]
-    erb :team
+    erb :newteam
   end
 
 end
